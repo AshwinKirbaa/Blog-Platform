@@ -30,27 +30,27 @@
 
 ## 3. Frontend Pages & UX Requirements
 - [x] React + Vite + TypeScript initialized with Tailwind CSS
-- [ ] Minimalist editorial design, clean typography, responsive layout
-- [ ] Proper loading, empty, and error states
-- [ ] Navigation bar with dynamic auth state (Login/Register vs Dashboard/Logout)
-- [ ] Home Page:
-  - [ ] Hero / featured post
-  - [ ] Search bar & category filters
-  - [ ] Latest posts listing with pagination
-  - [ ] Footer
-- [ ] Register Page: Name, Email, Password, Confirm Password, validation errors
-- [ ] Login Page: Email, Password, auth error feedback
-- [ ] Blog Details Page:
-  - [ ] Title, author info, publication date, read time, full content
-  - [ ] Comments section with comment list and add comment form
-  - [ ] Delete comment action for comment owner
-- [ ] Create Blog Page: Title, category, description, rich markdown/content editor, publish button
-- [ ] Edit Blog Page: Pre-filled form with current post data, update button
-- [ ] User Dashboard:
-  - [ ] User profile information
-  - [ ] List of "My Blog Posts"
-  - [ ] Edit and Delete controls per post
-  - [ ] Create New Post action button
+- [x] Minimalist editorial design, clean typography, responsive layout
+- [x] Proper loading, empty, and error states
+- [x] Navigation bar with dynamic auth state (Login/Register vs Dashboard/Logout)
+- [x] Home Page:
+  - [x] Hero / featured post
+  - [x] Search bar & category filters
+  - [x] Latest posts listing with pagination
+  - [x] Footer
+- [x] Register Page: Name, Email, Password, Confirm Password, validation errors
+- [x] Login Page: Email, Password, auth error feedback
+- [x] Blog Details Page:
+  - [x] Title, author info, publication date, read time, full content
+  - [x] Comments section with comment list and add comment form
+  - [x] Delete comment action for comment owner
+- [x] Create Blog Page: Title, category, description, rich content editor, publish button
+- [x] Edit Blog Page: Pre-filled form with current post data, update button
+- [x] User Dashboard:
+  - [x] User profile information
+  - [x] List of "My Blog Posts"
+  - [x] Edit and Delete controls per post
+  - [x] Create New Post action button
 
 ## 4. Database Architecture & Relations
 - [x] User model (`id`, `name`, `email`, `password`, `createdAt`, `updatedAt`)
@@ -67,6 +67,7 @@
 - [x] Frontend dev server startup verified
 - [x] Backend automated integration tests (20/20 test cases passing against isolated `blogdb_test`)
 - [x] Live HTTP API verification (`live-test.ts` against running server and dev `blogdb`)
-- [ ] Frontend end-to-end functionality verification
-- [ ] Postman-compatible REST collection / automated script tests
-- [ ] Responsive design inspection on mobile, tablet, desktop
+- [x] Frontend end-to-end functionality verification via Playwright browser automation
+- [x] Responsive design inspection on mobile (390px) and desktop (1440px)
+- [x] All workflows verified: Register -> Login -> Create -> View -> Comment -> Edit -> Delete -> Protected Route Redirect
+- [x] Remote GitHub repository configured and synced with auto-push (`https://github.com/AshwinKirbaa/Blog-Platform`)
